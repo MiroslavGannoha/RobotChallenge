@@ -1,9 +1,9 @@
-# RobotChallenge
+# Robot Challenge
 
-# To Run:
-npm install
-npm start
+## To run:
+- npm install
+- npm start
 
-# To test
-npm test
+## Run test:
+- npm test
 
