@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "baseUrl": "src"
+    },
+    "exclude": [
+        "dist",
+        "node_modules",
+        "test",
+    ]
+}
