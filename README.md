@@ -4,6 +4,6 @@
 - npm install
 - npm start
 
-## Run test:
+## Run tests:
 - npm test
 

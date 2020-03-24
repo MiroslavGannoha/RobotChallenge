@@ -1,13 +1,8 @@
-interface IPosition {
-    x: number;
-    y: number;
-}
+import { IPosition, Direction } from '../types';
 
 export interface IMoveableObjectProps {
     position?: IPosition;
 }
-
-export const defaultStartingPosition = {x: 1, y: 1};
 
 class MoveableObject {
     public constructor (props?: IMoveableObjectProps) {
@@ -15,10 +10,22 @@ class MoveableObject {
             this.position = props.position;
         }
     }
-    public position: IPosition = defaultStartingPosition;
-    public changePosition (newPosition: IPosition) {
+
+    public position: IPosition | null = null;
+
+    public setPosition (newPosition: IPosition) {
         this.position = newPosition;
     };
+
+    public report () {
+        const {position} = this;
+        if (position) {
+            const { x, y, direction } = position;
+            console.log(`Output: ${x},${y},${direction}`);
+        } else {
+            console.warn('Object has no position yet');
+        }
+    }
 }
 
 export default MoveableObject;

@@ -3,7 +3,8 @@
         "target": "es5",
         "module": "esnext",
         "moduleResolution": "node",
-        "baseUrl": "src"
+        "baseUrl": "src",
+        "strict": true,
     },
     "exclude": [
         "dist",

@@ -1,10 +1,10 @@
-import MoveableObject, { IMoveableObjectProps } from './base/MoveableObject';
+import MoveableObject, { IMoveableObjectProps } from '../base/MoveableObject';
 
 interface IRobotProps extends IMoveableObjectProps {
     robotName?: string;
 }
 
-export const defaultRobotName = 'Robot name';
+export const defaultRobotName = 'No Name';
 
 class Robot extends MoveableObject {
     public constructor(props?: IRobotProps) {

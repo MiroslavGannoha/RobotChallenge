@@ -30,7 +30,7 @@ module.exports = {
 		]
     },
     resolve: {
-        extensions: [".ts"],
+        extensions: ['.js', '.ts', '.tsx'],
         alias: {
             'app': path.resolve(__dirname, 'src/app/'),
         },
@@ -50,12 +50,12 @@ module.exports = {
             template: 'index.html',
         }),
     ],
-    devtool: isProduction ? false : 'source-map',
+    // devtool: isProduction ? false : 'source-map',
     devServer: {
         port: 3003,
         open: true,
         contentBase: sourcePath,
         stats: 'minimal',
     },
-	mode: isProduction ? 'production' : 'development'
+	// mode: isProduction ? 'production' : 'development'
 };
